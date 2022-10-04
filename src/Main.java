@@ -21,6 +21,8 @@ public class Main {
     public static String calc(String input) throws Exception {
             String[] parts = input.split(" ");
 
+            if (parts.length > 3) throw new Exception();
+
             boolean isArabic = true;
             if (Number.IsArabic(parts[0]) && Number.IsArabic(parts[2]))
                 isArabic = true;
